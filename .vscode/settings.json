@@ -1,0 +1,15 @@
+{
+  "editor.formatOnSave": false,
+  "files.autoSaveDelay": 500,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "cSpell.userWords": [],
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.bracketPairColorization.enabled": true,
+  "typescript.inlayHints.variableTypes.enabled": true,
+  "editor.tabSize": 2,
+  "editor.accessibilitySupport": "off",
+  "grammarly.hideUnavailablePremiumAlerts": true
+}
