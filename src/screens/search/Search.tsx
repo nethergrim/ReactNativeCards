@@ -7,13 +7,14 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { useCardsSearch } from '@api/useCardsSearch';
 
 import { detectCardType } from '../../model/CardType';
+import { Card } from '../../model/Card';
 
 import { styles } from './styles';
 import { SearchListItem } from './components/SearchListItem';
 
 const keyExtractor = (item: any) => item.id;
 
-const renderItem = ({ item }) => {
+const renderItem = ({ item }: { item: Card }) => {
   const cardType = detectCardType(item);
   return (
     <SearchListItem card={item} cardType={cardType} />

@@ -1,11 +1,17 @@
 import React from 'react';
 import { View, Image, Text } from 'react-native';
 
-import { detectCardType, CardType } from '../../../model/CardType';
+import { Card } from '../../../model/Card';
+import { CardType } from '../../../model/CardType';
 
 import { styles } from './styles';
 
-export const SearchListItem = ({ card, cardType }) => {
+interface Props {
+  card: Card;
+  cardType: CardType | null;
+}
+
+export const SearchListItem = ({ card, cardType }: Props) => {
   const smallImage = card.card_images[0].image_url_small;
 
   const renderRaceOnly = () => {
@@ -37,7 +43,7 @@ export const SearchListItem = ({ card, cardType }) => {
   };
 
   let backgroundStyle;
-  switch (detectCardType(card)) {
+  switch (cardType) {
     case CardType.Monster:
       backgroundStyle = styles.monsterCard;
       break;
@@ -65,7 +71,7 @@ export const SearchListItem = ({ card, cardType }) => {
         <Text style={styles.cardType}>{card.type}</Text>
         <Text style={styles.title}>{card.name}</Text>
 
-        { detectCardType(card) === CardType.Monster ? (
+        { cardType === CardType.Monster ? (
           <Text style={styles.levelText}>
             Level
             {' '}
