@@ -57,9 +57,9 @@ export const styles = StyleSheet.create({
   },
   title: {
     color: '#fff',
-    fontSize: 15,
+    fontSize: 16,
     marginTop: 4,
     flexWrap: 'wrap',
-    maxWidth: 160,
+    maxWidth: 150,
   },
 });

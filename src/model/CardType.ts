@@ -1,3 +1,4 @@
+import { Card } from './Card';
 
 export enum CardType {
   Monster = 'Normal Monster',
@@ -5,7 +6,7 @@ export enum CardType {
   Trap = 'Trap Card',
 }
 
-export const detectCardType = (card) => {
+export const detectCardType = (card: Card) => {
   if (card.type.includes('Monster')) {
     return CardType.Monster;
   } if (card.type.includes('Spell')) {

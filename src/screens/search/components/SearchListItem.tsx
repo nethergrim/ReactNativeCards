@@ -11,7 +11,9 @@ interface Props {
   cardType: CardType | null;
 }
 
-export const SearchListItem = ({ card, cardType }: Props) => {
+export const SearchListItem = (
+  { card, cardType }: Props,
+) => {
   const smallImage = card.card_images[0].image_url_small;
 
   const renderRaceOnly = () => {
@@ -31,13 +33,11 @@ export const SearchListItem = ({ card, cardType }: Props) => {
         <Text style={styles.stats}>
           atk
           {card.atk}
-
         </Text>
         <Text style={styles.stats}>
           def
           {card.def}
         </Text>
-
       </View>
     );
   };
