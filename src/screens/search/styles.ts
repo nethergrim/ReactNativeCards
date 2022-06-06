@@ -8,12 +8,22 @@ export const styles = StyleSheet.create({
   searchBar: {
     backgroundColor: '#ffffff',
     height: 40,
-    marginHorizontal: 16,
     paddingHorizontal: 8,
     borderRadius: 8,
-    marginBottom: 16,
+  },
+  searchBarContainer: {
+    height: 40,
+    alignContent: 'center',
+    justifyContent: 'center',
+    alignSelf: 'center',
+    position: 'absolute',
+    width: '94%',
   },
   list: {
+    paddingTop: 58,
     paddingBottom: 50,
+  },
+  loader: {
+    margin: 24,
   },
 });
