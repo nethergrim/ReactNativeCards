@@ -1,12 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import {
-  View, TextInput,
+  View, TextInput, FlatList, ActivityIndicator,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { useCardsSearch } from '@api/useCardsSearch';
 
+import { detectCardType } from '../../model/CardType';
+
 import { styles } from './styles';
+import { SearchListItem } from './components/SearchListItem';
+
+const keyExtractor = (item: any) => item.id;
+
+const renderItem = ({ item }) => {
+  const cardType = detectCardType(item);
+  return (
+    <SearchListItem card={item} cardType={cardType} />
+  );
+};
 
 export const Search = () => {
   const [search, setSearch] = useState('');
@@ -17,33 +29,47 @@ export const Search = () => {
   };
 
   const { cards, isLoading, isError } = useCardsSearch(searchRequest);
-  console.log(cards, isLoading, isError);
 
   const onSubmitEditing = () => {
     setSearchRequest(search);
   };
 
+  if (isError) {
+    // return null;
+    setSearchRequest('');
+  }
+
+  if (cards && cards.error) {
+    // return null;
+    setSearchRequest('');
+  }
+
   return (
     <SafeAreaView style={styles.container}>
-      <TextInput
-        style={styles.searchBar}
-        placeholder="Type card name here"
-        onChangeText={onSearch}
-        value={search}
-        autoFocus
-        blurOnSubmit
-        autoComplete="off"
-        returnKeyLabel="search"
-        returnKeyType="search"
-        clearTextOnFocus
-        clearButtonMode="while-editing"
-        keyboardType="web-search"
-        onSubmitEditing={onSubmitEditing}
-      />
-      <View style={styles.card} />
-      <View style={styles.card} />
-      <View style={styles.card} />
-      <View style={styles.card} />
+      <View>
+        <TextInput
+          style={styles.searchBar}
+          placeholder="Type card name here"
+          onChangeText={onSearch}
+          value={search}
+          autoFocus
+          blurOnSubmit
+          autoComplete="off"
+          returnKeyLabel="search"
+          returnKeyType="search"
+          clearTextOnFocus
+          clearButtonMode="while-editing"
+          keyboardType="web-search"
+          onSubmitEditing={onSubmitEditing}
+        />
+        {isLoading && <ActivityIndicator size="large" color="#BC5C8F" />}
+        <FlatList
+          data={cards ? cards.data : undefined}
+          renderItem={renderItem}
+          keyExtractor={keyExtractor}
+          contentContainerStyle={styles.list}
+        />
+      </View>
     </SafeAreaView>
   );
 };

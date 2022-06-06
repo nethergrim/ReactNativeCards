@@ -95,6 +95,11 @@ module.exports = {
             position: 'after',
           },
           {
+            pattern: '@model/**',
+            group: 'external',
+            position: 'after',
+          },          
+          {
             pattern: '@components/**',
             group: 'external',
             position: 'after',

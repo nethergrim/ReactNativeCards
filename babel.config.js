@@ -26,6 +26,7 @@ module.exports = {
           '@components': './src/components',
           '@api': './src/api',
           '@navigation': './src/navigation',
+          '@model': './src/model',
         },
       },
     ],
