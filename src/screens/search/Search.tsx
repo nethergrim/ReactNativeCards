@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-  View, TextInput, ActivityIndicator, Animated,
+  View, TextInput, ActivityIndicator, Animated, Alert,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -22,26 +22,26 @@ const renderItem = ({ item }: { item: Card }) => {
 };
 
 export const Search = () => {
-  const [search, setSearch] = useState('');
+  const [searchInput, setSearchInput] = useState('');
   const [searchRequest, setSearchRequest] = useState('');
 
   const onSearch = (text: string) => {
-    setSearch(text);
+    setSearchInput(text);
   };
 
   const { cards, isLoading, isError } = useCardsSearch(searchRequest);
 
   const onSubmitEditing = () => {
-    setSearchRequest(search);
+    setSearchRequest(searchInput);
   };
 
   if (isError) {
-    // return null;
+    Alert.alert('Error', 'Network Error');
     setSearchRequest('');
   }
 
   if (cards && cards.error) {
-    // return null;
+    Alert.alert('Error', cards.error);
     setSearchRequest('');
   }
 
@@ -80,7 +80,7 @@ export const Search = () => {
             style={styles.searchBar}
             placeholder="Type card name here"
             onChangeText={onSearch}
-            value={search}
+            value={searchInput}
             autoFocus
             blurOnSubmit
             autoComplete="off"
