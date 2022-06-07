@@ -13,14 +13,7 @@ import { SearchListItem } from './components/SearchListItem';
 
 const keyExtractor = (item: any) => item.id;
 
-const renderItem = ({ item }: { item: Card }) => {
-  const cardType = detectCardType(item);
-  return (
-    <SearchListItem card={item} cardType={cardType} />
-  );
-};
-
-export const Search = () => {
+export const Search = ({ navigation }) => {
   const [searchInput, setSearchInput] = useState('');
   const [searchRequest, setSearchRequest] = useState('');
 
@@ -57,6 +50,16 @@ export const Search = () => {
     if (e.nativeEvent.contentOffset.y > 0) {
       scrollY.setValue(e.nativeEvent.contentOffset.y);
     }
+  };
+
+  const renderItem = ({ item }: { item: Card }) => {
+    const cardType = detectCardType(item);
+    const onCardPress = () => {
+      navigation.navigate('CardDetails', { card: item });
+    };
+    return (
+      <SearchListItem card={item} cardType={cardType} onCardPress={onCardPress} />
+    );
   };
 
   return (

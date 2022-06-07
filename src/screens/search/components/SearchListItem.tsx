@@ -1,5 +1,7 @@
 import React from 'react';
-import { View, Image, Text } from 'react-native';
+import {
+  View, Image, Text, Pressable,
+} from 'react-native';
 
 import { Card } from '../../../model/Card';
 import { CardType } from '../../../model/CardType';
@@ -9,10 +11,11 @@ import { styles } from './styles';
 interface Props {
   card: Card;
   cardType: CardType | null;
+  onCardPress: () => void;
 }
 
 export const SearchListItem = (
-  { card, cardType }: Props,
+  { card, cardType, onCardPress }: Props,
 ) => {
   const smallImage = card.card_images[0].image_url_small;
 
@@ -58,7 +61,10 @@ export const SearchListItem = (
   }
 
   return (
-    <View style={[styles.card, backgroundStyle]}>
+    <Pressable
+      onPress={onCardPress}
+      style={[styles.card, backgroundStyle]}
+    >
       <Image
         style={styles.tinyLogo}
         source={{
@@ -80,6 +86,6 @@ export const SearchListItem = (
         ) : null }
       </View>
       {card.atk ? renderCardDetails() : renderRaceOnly()}
-    </View>
+    </Pressable>
   );
 };
