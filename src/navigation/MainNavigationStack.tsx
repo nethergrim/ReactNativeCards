@@ -10,7 +10,7 @@ export const MainNavigationStack = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Search">
-        <Stack.Screen name="Search" component={Search}  />
+        <Stack.Screen name="Search" component={Search} />
       </Stack.Navigator>
     </NavigationContainer>
   );

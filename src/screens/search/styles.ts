@@ -8,6 +8,7 @@ export const styles = StyleSheet.create({
   searchBar: {
     backgroundColor: '#ffffff',
     height: 40,
+    marginTop: 16,
     paddingHorizontal: 8,
     borderRadius: 8,
   },
@@ -20,10 +21,10 @@ export const styles = StyleSheet.create({
     width: '94%',
   },
   list: {
-    paddingTop: 58,
+    paddingTop: 48,
     paddingBottom: 50,
   },
   loader: {
-    margin: 24,
+    marginTop: 100,
   },
 });
