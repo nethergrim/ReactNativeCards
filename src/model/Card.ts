@@ -1,9 +1,9 @@
 export type Card = {
-  id: string;
+  id: number;
   name: string;
   type: string;
-  atk?: string;
-  def?: string;
+  atk?: number;
+  def?: number;
   race: string;
   level?: number;
   card_images: CardImage[];

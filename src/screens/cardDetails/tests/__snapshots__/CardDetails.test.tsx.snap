@@ -1,0 +1,361 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchListItem render should render  SearchListItem 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#ececec",
+        "flex": 1,
+        "padding": 12,
+      },
+      Object {
+        "backgroundColor": "#C1855E67",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "flex": 1,
+          "fontSize": 15,
+          "fontWeight": "bold",
+          "textShadowColor": "#000000aa",
+          "textShadowOffset": Object {
+            "height": 0.5,
+            "width": 0.5,
+          },
+          "textShadowRadius": 1,
+        }
+      }
+    >
+      Level
+       
+      3
+    </Text>
+    <Text
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "color": "#fff",
+          "flex": 1,
+          "fontSize": 16,
+          "fontWeight": "bold",
+          "justifyContent": "flex-end",
+          "textAlign": "right",
+          "textShadowColor": "#000000aa",
+          "textShadowOffset": Object {
+            "height": 0.5,
+            "width": 0.5,
+          },
+          "textShadowRadius": 1,
+        }
+      }
+    >
+      Normal Monster
+       - 
+      Fairy
+    </Text>
+  </View>
+  <Image
+    resizeMode="contain"
+    source={
+      Object {
+        "uri": "https://storage.googleapis.com/ygoprodeck.com/pics/58696829.jpg",
+      }
+    }
+    style={
+      Object {
+        "alignSelf": "center",
+        "height": 280,
+        "marginBottom": 24,
+        "marginTop": 24,
+        "width": 160,
+      }
+    }
+  />
+  <Text
+    style={
+      Object {
+        "alignSelf": "center",
+        "color": "#fff",
+        "fontSize": 22,
+        "fontWeight": "bold",
+        "marginBottom": 16,
+        "textShadowColor": "#000000aa",
+        "textShadowOffset": Object {
+          "height": 0.5,
+          "width": 0.5,
+        },
+        "textShadowRadius": 1,
+      }
+    }
+  >
+    Bio-Mage
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#fff",
+        "fontSize": 15,
+        "fontWeight": "bold",
+        "marginBottom": 8,
+        "textShadowColor": "#000000aa",
+        "textShadowOffset": Object {
+          "height": 0.5,
+          "width": 0.5,
+        },
+        "textShadowRadius": 1,
+      }
+    }
+  >
+    LIGHT
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#fff",
+        "fontSize": 18,
+        "fontWeight": "500",
+        "marginBottom": 8,
+        "textShadowColor": "#000000aa",
+        "textShadowOffset": Object {
+          "height": 0.5,
+          "width": 0.5,
+        },
+        "textShadowRadius": 1,
+      }
+    }
+  >
+    A mysterious priest created as a result of the latest advances in biotechnology.
+  </Text>
+  <View
+    style={
+      Object {
+        "flexDirection": "row-reverse",
+        "marginTop": 8,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontSize": 15,
+          "fontWeight": "bold",
+          "marginBottom": 8,
+          "textShadowColor": "#000000aa",
+          "textShadowOffset": Object {
+            "height": 0.5,
+            "width": 0.5,
+          },
+          "textShadowRadius": 1,
+        }
+      }
+    >
+      Def:
+       
+      1000
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontSize": 15,
+          "fontWeight": "bold",
+          "marginBottom": 8,
+          "textShadowColor": "#000000aa",
+          "textShadowOffset": Object {
+            "height": 0.5,
+            "width": 0.5,
+          },
+          "textShadowRadius": 1,
+        }
+      }
+    >
+       / 
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontSize": 15,
+          "fontWeight": "bold",
+          "marginBottom": 8,
+          "textShadowColor": "#000000aa",
+          "textShadowOffset": Object {
+            "height": 0.5,
+            "width": 0.5,
+          },
+          "textShadowRadius": 1,
+        }
+      }
+    >
+      Atk:
+       
+      1150
+    </Text>
+  </View>
+  <Text
+    style={
+      Object {
+        "color": "#fff",
+        "fontSize": 15,
+        "fontWeight": "bold",
+        "marginBottom": 8,
+        "textShadowColor": "#000000aa",
+        "textShadowOffset": Object {
+          "height": 0.5,
+          "width": 0.5,
+        },
+        "textShadowRadius": 1,
+      }
+    }
+  >
+    Sets:
+  </Text>
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "set_code": "LON-043",
+          "set_name": "Labyrinth of Nightmare",
+          "set_price": "1.74",
+          "set_rarity": "Common",
+          "set_rarity_code": "(C)",
+        },
+        Object {
+          "set_code": "LON-E043",
+          "set_name": "Labyrinth of Nightmare",
+          "set_price": "1.81",
+          "set_rarity": "Common",
+          "set_rarity_code": "(C)",
+        },
+        Object {
+          "set_code": "LON-EN043",
+          "set_name": "Labyrinth of Nightmare",
+          "set_price": "2.45",
+          "set_rarity": "Common",
+          "set_rarity_code": "(C)",
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+    viewabilityConfigCallbackPairs={Array []}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <Text
+            style={
+              Object {
+                "color": "#fff",
+                "fontSize": 15,
+                "fontWeight": "bold",
+                "marginBottom": 8,
+                "textShadowColor": "#000000aa",
+                "textShadowOffset": Object {
+                  "height": 0.5,
+                  "width": 0.5,
+                },
+                "textShadowRadius": 1,
+              }
+            }
+          >
+            • 
+            Labyrinth of Nightmare
+             
+            (C)
+          </Text>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <Text
+            style={
+              Object {
+                "color": "#fff",
+                "fontSize": 15,
+                "fontWeight": "bold",
+                "marginBottom": 8,
+                "textShadowColor": "#000000aa",
+                "textShadowOffset": Object {
+                  "height": 0.5,
+                  "width": 0.5,
+                },
+                "textShadowRadius": 1,
+              }
+            }
+          >
+            • 
+            Labyrinth of Nightmare
+             
+            (C)
+          </Text>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View>
+          <Text
+            style={
+              Object {
+                "color": "#fff",
+                "fontSize": 15,
+                "fontWeight": "bold",
+                "marginBottom": 8,
+                "textShadowColor": "#000000aa",
+                "textShadowOffset": Object {
+                  "height": 0.5,
+                  "width": 0.5,
+                },
+                "textShadowRadius": 1,
+              }
+            }
+          >
+            • 
+            Labyrinth of Nightmare
+             
+            (C)
+          </Text>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

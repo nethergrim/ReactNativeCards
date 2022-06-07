@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchListItem render should render  SearchListItem 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#fff",
+        "borderRadius": 8,
+        "flex": 1,
+        "flexDirection": "row",
+        "height": 100,
+        "marginHorizontal": 12,
+        "marginTop": 12,
+        "padding": 16,
+        "shadowColor": "#000",
+        "shadowOffset": Object {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 0.2,
+        "shadowRadius": 2,
+      },
+      Object {
+        "backgroundColor": "#C1855E77",
+      },
+    ]
+  }
+>
+  <Image
+    resizeMode="contain"
+    source={
+      Object {
+        "uri": "https://storage.googleapis.com/ygoprodeck.com/pics_small/58696829.jpg",
+      }
+    }
+    style={
+      Object {
+        "height": 70,
+        "marginRight": 12,
+        "width": 60,
+      }
+    }
+  />
+  <View>
+    <Text
+      style={
+        Object {
+          "color": "#eee",
+          "fontSize": 11,
+          "marginTop": -2,
+        }
+      }
+    >
+      Normal Monster
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "flexWrap": "wrap",
+          "fontSize": 16,
+          "marginTop": 4,
+          "maxWidth": 150,
+        }
+      }
+    >
+      Bio-Mage
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "marginTop": 4,
+        }
+      }
+    >
+      Level
+       
+      3
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "flex": 1,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#eee",
+          "fontSize": 11,
+          "marginBottom": 4,
+          "marginTop": -2,
+        }
+      }
+    >
+      Race
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+        }
+      }
+    >
+      Fairy
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#eee",
+          "fontSize": 12,
+        }
+      }
+    >
+      atk
+      1150
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#eee",
+          "fontSize": 12,
+        }
+      }
+    >
+      def
+      1000
+    </Text>
+  </View>
+</View>
+`;
